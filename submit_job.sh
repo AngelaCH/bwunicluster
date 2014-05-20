@@ -96,7 +96,7 @@ fi
 
 
 # submit job
-msub "${script_path}" \
+msub "${job_runscript}" \
     -l nodes=${res_nodes},walltime=${res_time} \
     -q "${job_queue}" \
     ${msub_mail_arg} \
