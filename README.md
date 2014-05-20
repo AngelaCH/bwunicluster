@@ -4,8 +4,21 @@ bwUniCluster
 Scripts and example files, which could be useful for the [bwUniCluster](http://www.bwhpc-c5.de/wiki/)
 
 
-How to use
-----------
+Repository Content
+------------------
+### Scripts:
+- submit_job.sh: template script to submit jobs to the cluster
+- run_job.sh: runscript template to run a job on a cluster node
+- stop_all_jobs.sh: script that cancels all your jobs (asks for permission first)
+
+### Tips and Tricks:
+- auto_screen.md: shows how to start a screen session when logging in
+
+
+
+How to use the Scripts
+----------------------
+
 To run the scripts you have to copy the files to your home folder on the login node.
 Then you should grant execute permission to the scripts:
 ```sh
