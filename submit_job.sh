@@ -51,6 +51,11 @@ res_nodes="1:ppn=2"
 #   (Note 2: This seems to overrule the job queue class)
 res_time="1:00:00:00"
 
+#   memory
+#   total amount of memory needed
+#   units: kb, mb, gb
+res_mem="1000mb"
+
 
 # -> status report
 #   send emails when job starts, ends, or was aborted?
@@ -97,7 +102,7 @@ fi
 
 # submit job
 msub "${job_runscript}" \
-    -l nodes=${res_nodes},walltime=${res_time} \
+    -l nodes=${res_nodes},walltime=${res_time},mem=${res_mem} \
     -q "${job_queue}" \
     ${msub_mail_arg} \
     ${msub_arg_name} \
