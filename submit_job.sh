@@ -104,7 +104,7 @@ fi
 msub "${job_runscript}" \
     -l nodes=${res_nodes},walltime=${res_time},mem=${res_mem} \
     -q "${job_queue}" \
-    ${msub_mail_arg} \
+    ${msub_arg_mail} \
     ${msub_arg_name} \
     ${msub_arg_output} \
     ${msub_arg_variables} 
